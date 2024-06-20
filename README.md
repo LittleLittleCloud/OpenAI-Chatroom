@@ -24,3 +24,7 @@ dotnet chatroom -c client.json
 ```
 
 ![openai](assets/agent-chatroom-openai.gif)
+
+## Further Reading
+- [Agent ChatRoom](https://github.com/LittleLittleCloud/Agent-ChatRoom)
+- [AutoGen.Net](https://microsoft.github.io/autogen-for-net/)
