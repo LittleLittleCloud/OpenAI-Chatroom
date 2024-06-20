@@ -1,0 +1,24 @@
+{
+    "$schema": "https://raw.githubusercontent.com/LittleLittleCloud/Agent-ChatRoom/main/schema/client_configuration_schema.json",
+    "name": "User",
+    "room_config": {
+        "port": 30001,
+        "room": "openai"
+    },
+    "channel_config": {
+        "openai_config": {
+            "llm_type": "OpenAI",
+            "openai_model_id": "gpt-3.5-turbo",
+            "openai_api_key": "xxx"
+        }
+    },
+    "agent_extensions": [
+        {
+            "name": "openai",
+            "command": "dotnet chatroom-openai -c openai.json -r openai -p 30001"
+        }
+    ],
+    "server_config": {
+        "urls": "http://localhost:51237;https://localhost:51238"
+    }
+}
