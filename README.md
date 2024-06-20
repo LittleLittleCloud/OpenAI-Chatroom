@@ -2,6 +2,8 @@
 
 This repo contains the quick-start configuration for openai agent.
 
+![openai](assets/agent-chatroom-openai.gif)
+
 ## Quick Start
 
 1. Clone this repo and navigate to the root directory of the repo.
@@ -23,7 +25,6 @@ dotnet tool restore
 dotnet chatroom -c client.json
 ```
 
-![openai](assets/agent-chatroom-openai.gif)
 
 ## Further Reading
 - [Agent ChatRoom](https://github.com/LittleLittleCloud/Agent-ChatRoom)
