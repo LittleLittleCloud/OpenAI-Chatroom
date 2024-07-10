@@ -3,15 +3,9 @@
   "isRoot": true,
   "tools": {
     "chatroom.client": {
-      "version": "0.3.2",
+      "version": "0.4.2",
       "commands": [
         "chatroom"
-      ]
-    },
-    "chatroom.openai": {
-      "version": "0.3.2",
-      "commands": [
-        "chatroom-openai"
       ]
     }
   }

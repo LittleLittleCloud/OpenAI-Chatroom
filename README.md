@@ -17,12 +17,12 @@ This repo contains the quick-start configuration for openai agent.
 dotnet tool restore
 ```
 
-3. Replace the `openai-api-key` in both [client.json](client.json) and [openai.json](openai.json) with your own OpenAI API key.
+3. Replace the `<openai-api-key>` in [openai.json](openai.json) with your own OpenAI API key.
 
 4. Start the Agent Chatroom!
 
 ```bash
-dotnet chatroom -c client.json
+dotnet chatroom -c openai.json
 ```
 
 

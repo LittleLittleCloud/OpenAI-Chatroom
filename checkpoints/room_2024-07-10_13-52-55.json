@@ -1,0 +1,60 @@
+{
+  "type": "ChatRoomContextSchemaV0",
+  "channels": {
+    "general": {
+      "Name": "general",
+      "Members": [
+        {
+          "Name": "gpt4o",
+          "SelfDescription": "I am a helpful AI assistant",
+          "IsHuman": false
+        },
+        {
+          "Name": "User",
+          "SelfDescription": "Human User",
+          "IsHuman": true
+        },
+        {
+          "Name": "gpt35",
+          "SelfDescription": "I am a helpful AI assistant",
+          "IsHuman": false
+        }
+      ],
+      "Orchestrators": [
+        "DynamicGroupChat",
+        "RoundRobin"
+      ]
+    }
+  },
+  "chat_history": {
+    "general": [
+      {
+        "From": "User",
+        "Created": "2024-07-10T20:52:43.993+00:00",
+        "Parts": [
+          {
+            "TextPart": "Tell a joke",
+            "ImageData": null,
+            "ImageUrl": null,
+            "MimeType": null
+          }
+        ],
+        "ID": 1720644764
+      },
+      {
+        "From": "gpt4o",
+        "Created": "2024-07-10T13:52:45.9002297-07:00",
+        "Parts": [
+          {
+            "TextPart": "Sure, here\u0027s a joke for you:\n\nWhy did the scarecrow win an award?\n\nBecause he was outstanding in his field!",
+            "ImageData": null,
+            "ImageUrl": null,
+            "MimeType": null
+          }
+        ],
+        "ID": 1720644765
+      }
+    ]
+  },
+  "current_channel": "General"
+}

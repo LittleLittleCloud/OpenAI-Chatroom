@@ -1,9 +1,35 @@
 {
-    "$schema": "https://raw.githubusercontent.com/LittleLittleCloud/Agent-ChatRoom/main/schema/chatroom_openai_configuration_schema.json",
-    "name": "openai",
-    "llm_config": {
-        "llm_type": "OpenAI",
-        "openai_model_id": "gpt-3.5-turbo",
-        "openai_api_key": "xxx"
+    "$schema": "chatroom_configuration_schema.json",
+    "channel_config": {
+        "openai_config": {
+            "llm_type": "OpenAI",
+            "openai_model_id": "gpt-3.5-turbo",
+            "openai_api_key": "<openai-api-key>"
+        }
+    },
+    "server_config": {
+        "urls": "http://localhost:51234;https://localhost:51235"
+    },
+    "chatroom_openai_configuration": {
+        "agents": [
+            {
+                "name": "gpt35",
+                "system_message": "You are a helpful AI assistant",
+                "llm_config": {
+                    "llm_type": "OpenAI",
+                    "openai_model_id": "gpt-3.5-turbo",
+                    "openai_api_key": "<openai-api-key>"
+                }
+            },
+            {
+                "name": "gpt4o",
+                "system_message": "You are a helpful AI assistant",
+                "llm_config": {
+                    "llm_type": "OpenAI",
+                    "openai_model_id": "gpt-4o",
+                    "openai_api_key": "<openai-api-key>"
+                }
+            }
+        ]
     }
 }
