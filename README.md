@@ -22,7 +22,7 @@ dotnet tool restore
 4. Start the Agent Chatroom!
 
 ```bash
-dotnet chatroom -c openai.json
+dotnet chatroom run -c openai.json
 ```
 
 
